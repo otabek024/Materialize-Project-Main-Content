@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Source+Sans+Pro:wght@400;700&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+      
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col s2 first-cont">
+            <div class="wrapper">
+              <ul id="nav-mobile" class="sidenav sidenav-fixed grey lighten-2">
+                <li class="material-icons">favorite_border</li>
+                <li class="material-icons">reply_all</li>
+                <li class="material-icons">bookmark_border</li>
+                <li class="material-icons">more_horiz</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col s7 second-cont">
+            <div class="container">
+              <div class="row">
+                <div class="col s12 center-wrapper">
+                  <div class="f-title">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuWlKVGJeILLo6n3_-9GgvdvWyz7MJbC1o7g&usqp=CAU" alt="" class="avatar"/>
+                    <div>
+                      <h5 class="title">Mark Zuckerberg</h5>
+                      <p class="desc">Posted on Nov1 , Updated on Nov 3</p>
+                    </div>
+                  </div>
+                  <h1 class="h1">Working with immutable arrays and objects in Javascript</h1>
+                  <div class="links">
+                    <a href="#">#javascript</a>
+                    <a href="#">#arrays</a>
+                    <a href="#">#objects</a>
+                    <a href="#">#immutability</a>
+                  </div>
+                  <p class="flow-text">
+                    When let and const keywords were introduced in ES2015 (ES6), many of declaring problems in javascript variables were solved. In addition to block scoping improvement, also encountered in let declarations, const could ensure the variable was declared only once and its value was not modified later.
+                  </p>
+                  <h3 class="h3"><b>Primitives vs non-primitives data types</b></h3>
+                  <p class="flow-text">
+                    We have been using a string as data type in const declaration to thrown an error at runtime. Other primitive data types like number and boolean behave the same way:
+                  </p>
+                  <h3 class="h3"><b>Shallow vs deep freeze</b></h3>
+                  <p class="flow-text">
+                    When we freeze an object, only the top-level properties are frozen. In other words, the nested objects properties can be changed, that's a shallow freeze. For deep freeze, we need to recursively freeze each property of type object and we can create a helper function to do it:
+                  </p>
+                  <h3 class="h3"><b>No errors, why?</b></h3>
+                  <p class="flow-text">
+                    Basically, Javascript uses call stack memory space to save references and values for primitives data types, while for non-primitive ones, it uses a separate space in memory called heap. In that case, call stack saves as value in its memory only heap memory reference ID, not the object and array values.
+                  </p>
+                  <h3 class="h3"><b>Conclusion</b></h3>
+                  <p class="flow-text">
+                    Understand how non-primitive data types work is very important for handle data in the correct way in JavaScript. Its memory model based in call stack and heap are essential parts of it and you should to know it.
+                  </p>
+                  <div class="conclusion">
+                    <h3 class="h3"><b>Discussion (0)</b></h3>
+                    <button class="btn-conc">Subscribe</button>
+                  </div>
+                  <div class="textbox">
+                    <a class="btn-floating btn-small waves-effect waves-light black">DEV</a>
+                    <textarea type="text" id="textarea" class="materialize-textarea"></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <h3 class="h3"><b>Read next</b></h3>
+                <div class="f-title">
+                  <img src="https://www.orissapost.com/wp-content/uploads/2020/06/carryminati-1024x576.jpg" alt="" class="avatar2"/>
+                  <div>
+                    <a href="#" class="link-avatar">
+                      <h5 class="link-title"> UI Dev Newsletter #B82</h5>
+                      <p class="link-desc">Silverstar Bistrovic - Nov 11</p>  
+                    </a>
+                  </div>
+                </div>
+                <div class="f-title">
+                  <img src="https://blogs-images.forbes.com/danschawbel/files/2017/12/Dan-Schawbel_avatar_1512422077-400x400.jpg" alt="" class="avatar2"/>
+                  <div>
+                    <a href="#" class="link-avatar">
+                      <h5 class="link-title"> React js Developer Dom</h5>
+                      <p class="link-desc">Satireham - Nov 11</p>  
+                    </a>
+                  </div>
+                </div>
+                <div class="f-title">
+                  <img src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHBlcnNvbmF8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80" alt="" class="avatar2"/>
+                  <div>
+                    <a href="#" class="link-avatar">
+                      <h5 class="link-title"> Graphic Designer with 3+ experience</h5>
+                      <p class="link-desc">Everen John - Nov 10</p>  
+                    </a>
+                  </div>
+                </div>
+                <div class="f-title">
+                  <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cGVyc29ufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80" alt="" class="avatar2"/>
+                  <div>
+                    <a href="#" class="link-avatar">
+                      <h5 class="link-title"> Backend Developer with Node js</h5>
+                      <p class="link-desc">From 2018 - Nov 11</p>  
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col s3 third-cont grey lighten-2 hide-on-med-and-down">
+            <div class="container fixed">
+              <div class="row">
+                <div class="col s12 m12">
+                  <div class="card">
+                    <div class="black-back"></div>
+                    <div class="card-box">
+                      <div class="f-title">
+                        <img src="https://media.istockphoto.com/photos/smiling-man-outdoors-in-the-city-picture-id1179420343?k=20&m=1179420343&s=612x612&w=0&h=G2UGMVSzAXGAQs3pFZpvWlHNRAzwPIWIVtSOxZHsEuc=" alt="" class="avatar"/>
+                        <h5 class="title">Darragh Ordian</h5>
+                      </div>
+                      <a href="#" class="waves-effect waves-light btn blue darken-1 btn-follow">Follow</a>
+                      <p class="flow-text right-desc">
+                        Hi! I'm Darragh ORiordan. I live and work in Sydney, Australia enjoying the mountains and the ocean. I build and support happy teams that create high quality software for the web!
+                      </p>
+                      <p class="p-bold">Location</p>
+                      <p class="child">Sydney, Australia</p>
+                      <p class="p-bold">Education</p>
+                      <p class="child">BSc Applied Politics</p>
+                      <p  class="p-bold">Work</p>
+                      <p class="child">Developer, Team Lead</p>
+                      <p class="p-bold">Joined</p>
+                      <p class="child">Jan 16, 2019</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-box">
+                      <h5 class="title">More from <a href="#">Darragh Ordian</a></h5>
+                      <hr class="line">
+                      <a href="#">
+                        <p class="p-link"> A Cheast Sheet for the Next JS Request Pipeline </p>
+                      </a>
+                      <div class="links">
+                        <a href="#">#webdev</a>
+                        <a href="#">#node</a>
+                        <a href="#">#nextjs</a>
+                      </div>
+                      <hr class="line">
+                      <a href="#">
+                        <p class="p-link"> A Cheast Sheet for the Next JS Request Pipeline </p>
+                      </a>
+                      <div class="links">
+                        <a href="#">#webdev</a>
+                        <a href="#">#node</a>
+                        <a href="#">#nextjs</a>
+                      </div>
+                      <hr class="line">
+                      <a href="#">
+                        <p class="p-link"> A Cheast Sheet for the Next JS Request Pipeline </p>
+                      </a>
+                      <div class="links">
+                        <a href="#">#webdev</a>
+                        <a href="#">#node</a>
+                        <a href="#">#nextjs</a>
+                      </div>
+                    </div>
+                  </hr>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+     
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      <script> 
+        const sideNav = document.querySelector('.sidenav');
+        M.Sidenav.init(sideNav, {});
+      </script>
+    </body>
+  </html>
