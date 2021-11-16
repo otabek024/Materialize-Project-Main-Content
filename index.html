@@ -18,10 +18,10 @@
           <div class="col s2 first-cont">
             <div class="wrapper">
               <ul id="nav-mobile" class="sidenav sidenav-fixed grey lighten-2">
-                <li class="material-icons">favorite_border</li>
-                <li class="material-icons">reply_all</li>
-                <li class="material-icons">bookmark_border</li>
-                <li class="material-icons">more_horiz</li>
+                <a href="#modal1" class="modal-trigger"><span class="num">1</span><li class="material-icons heart" id="">favorite_border</li></a>
+                <a href="#modal1" class="modal-trigger"><span class="num">4</span><li class="material-icons reply_all" id="">reply_all</li></a>
+                <a href="#modal1" class="modal-trigger"><span class="num">7</span><li class="material-icons bookmark_border" id="">bookmark_border</li></a>
+                <a href="#" class=""><li class="material-icons more_horiz" id="">more_horiz</li></a>
               </ul>
             </div>
           </div>
@@ -64,11 +64,11 @@
                   </p>
                   <div class="conclusion">
                     <h3 class="h3"><b>Discussion (0)</b></h3>
-                    <button class="btn-conc">Subscribe</button>
+                    <button data-target="modal1" class="btn-conc modal-trigger">Subscribe</button>
                   </div>
                   <div class="textbox">
                     <a class="btn-floating btn-small waves-effect waves-light black">DEV</a>
-                    <textarea type="text" id="textarea" class="materialize-textarea"></textarea>
+                    <textarea data-target="modal1" type="text" id="textarea" class="materialize-textarea modal-trigger"></textarea>
                   </div>
                 </div>
               </div>
@@ -110,6 +110,23 @@
                     </a>
                   </div>
                 </div>
+                <!-- <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a> -->
+
+                <!-- Modal Structure -->
+                <div id="modal1" class="modal">
+                  <div class="modal-content">
+                    <div class="m-div">
+                      <h4 class="h4">Login to continue</h4>
+                      <h5 class="modal-close">&#10005;</h5>
+                    </div>
+                    <hr class="line">
+                    <div class="center btn-logo"><a class="btn-floating btn-large waves-effect waves-light black">DEV</a></div>
+                    <p class="gray">We're a place where coders share, stay up-to-date and grow their careers.</p>
+                    <div class="center"><a href="#" class="waves-effect waves-light blue btn-small log-in">Log in</a></div>
+                    <div class="center"><a href="#" class="waves-effect waves-teal btn-small btn-flat">Create account</a></div>
+                  </div>
+                </div>
+                        
               </div>
             </div>
           </div>
@@ -124,7 +141,7 @@
                         <img src="https://media.istockphoto.com/photos/smiling-man-outdoors-in-the-city-picture-id1179420343?k=20&m=1179420343&s=612x612&w=0&h=G2UGMVSzAXGAQs3pFZpvWlHNRAzwPIWIVtSOxZHsEuc=" alt="" class="avatar"/>
                         <h5 class="title">Darragh Ordian</h5>
                       </div>
-                      <a href="#" class="waves-effect waves-light btn blue darken-1 btn-follow">Follow</a>
+                      <a href="#modal1" class="waves-effect waves-light btn modal-trigger blue darken-1 btn-follow">Follow</a>
                       <p class="flow-text right-desc">
                         Hi! I'm Darragh ORiordan. I live and work in Sydney, Australia enjoying the mountains and the ocean. I build and support happy teams that create high quality software for the web!
                       </p>
@@ -177,13 +194,8 @@
 
         </div>
       </div>
-
-     
-      <script type="text/javascript" src="js/materialize.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-      <script> 
-        const sideNav = document.querySelector('.sidenav');
-        M.Sidenav.init(sideNav, {});
-      </script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      <script src="index.js"></script>
     </body>
   </html>

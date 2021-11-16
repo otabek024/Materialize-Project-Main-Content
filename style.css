@@ -19,9 +19,36 @@
   display: flex;
   flex-direction: column;
   text-align: right;
-  padding: 60px 40px;
   cursor: pointer;
+  padding-top: 70px;
   gap: 2rem;
+}
+
+.wrapper a{
+  color: #333;
+}
+
+.sidenav li{
+  padding-right: 20px;
+}
+
+.heart:hover{
+  color: red;
+  transform: scale(1.1);
+
+}
+
+.reply_all:hover{
+  color: darkcyan;
+  transform: scale(1.1);
+}
+.bookmark_border:hover{
+  color: blue;
+  transform: scale(1.1);
+}
+.more_horiz:hover{
+  color: gray;
+  transform: scale(1.1);
 }
 
 .f-title{
@@ -188,6 +215,62 @@
   border: 1px solid rgb(236, 236, 236);
 }
 
+.h4{
+  font-size: 1.5rem;
+  font-weight: bolder;
+  padding-top: 15px;
+}
+
+.modal-close:hover{
+  color: #2196F3;
+  transform: scale(1.2);
+}
+
+.modal{
+  width: 480px;
+  border-radius: 5px;
+}
+
+.m-div{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.log-in{
+  width: 80%;
+}
+
+.gray{
+  color: gray;
+}
+
+.btn-logo{
+  padding: 10px;
+}
+
+.modal .btn-flat{
+  margin-top: 10px;
+  color: #2196F3;
+  font-weight: 600;
+}
+
+.modal .btn-flat:hover{
+  background-color: rgb(235, 235, 235);
+}
+
+.modal-trigger{
+  position: relative;
+}
+
+.num{
+  position: absolute;
+  margin-top: 40px;
+  margin-left: 7px;
+  color: gray;
+}
+
+
 @media screen and (max-width: 480px) {
   .row .col.s7{
     width: 100%;
@@ -197,6 +280,17 @@
     line-height: 35px;
   }
 }
+@media screen and (max-width: 425px) {
+  .row .col.s7{
+    width: 100%;
+  }
+  .h1{
+    font-size: 2rem;
+    line-height: 35px;
+  }
+}
+
+
 
 
 
